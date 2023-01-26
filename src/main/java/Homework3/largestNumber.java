@@ -2,28 +2,20 @@ package Homework3;
 
 import java.util.Scanner;
 
-public class largestNumber {
-    public static void main(String[] args) {
-        int x, y, z;
+ public static void main(String[] args) {
+        System.out.println("Enter the first number: ");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the first number:");
-        x = scanner.nextInt();
-        System.out.println("Enter the second number:");
-        y = scanner.nextInt();
-        System.out.println("Enter the third number:");
-        z = scanner.nextInt();
-        if(x > y && x > z)
-        {
-            System.out.println("Largest number is:"+x);
-        }
-        else if(y > z)
-        {
-            System.out.println("Largest number is:"+y);
-        }
+        int firstnumber = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter the second number: ");
+        int secondnumber = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter the third number: ");
+        int thirdnumber = Integer.parseInt(scanner.nextLine());
+        if (firstnumber>secondnumber && firstnumber>thirdnumber){
+            System.out.println(firstnumber + " is the largest number" );}
+        else if (secondnumber>firstnumber && secondnumber>thirdnumber) {
+            System.out.println(secondnumber + " is the largest number");}
         else
-        {
-            System.out.println("Largest number is:"+z);
-        }
-
+            System.out.println(thirdnumber + "" + " is the largest number");
     }
 }
+
